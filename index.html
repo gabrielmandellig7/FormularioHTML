@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8"> <!-- UTF-8, que inclui caracteres especiais -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="stylesheet" href="css/estilo.css"> <!-- Vincula o arquivo de estilo CSS externo-->
+ <title>Formulário CSS</title> <!-- Define o título da página, que aparece na aba do navegador -->
+</head>
+<body>
+ <div id="container"> <!-- Cria uma div pro conteúdo do formulário -->
+ <form action="teste.php" method="get"> <!-- Define um formulário que envia dados para "teste.php" usando o método GET -->
+ <div class="grupo"> <!--Abertura Div Grupo -->
+ <label for="nome">Nome</label> <!-- Define um label para o campo de texto "nome" -->
+ <input type="text" placeholder="Digite o nome" name='nome'> <!-- Campo de texto para digitar o nome -->
+ </div>
+ <div class="grupo"> <!-- Cria um grupo para o campo de seleção do "País" -->
+ <label for="pais">País</label> <!-- Define um rótulo para o campo de seleção "pais" -->
+ <select name="pais"> <!-- Cria uma lista suspensa para selecionar o país -->
+ <option value="AU">Australia</option> <!-- Opção de seleção para a Austrália -->
+ <option value="BR">Brasil</option> <!-- Opção de seleção para o Brasil -->
+ <option value="CD">Canadá</option> <!-- Opção de seleção para o Canadá -->
+ <option value="US">Estados Unidos</option> <!-- Opção de seleção para os EUA -->
+ </select>
+ </div>
+ <div class="grupo"> <!-- Cria uma div para os campos de telefone -->
+ <fieldset> <!-- Agrupa os campos de telefone em uma seção com bordas -->
+ <legend>Telefone</legend> <!-- Define o título da seção de telefone -->
+ <label for="res">Residencial</label> <!-- Rótulo para o campo de telefone residencial -->
+ <input type="text" name="res" placeholder="Residencial"> <!-- Campo de texto para o telefone residencial -->
+ <label for="com">Comercial</label> <!-- Rótulo para o campo de telefone comercial -->
+ <input type="text" name="com" placeholder="Comercial"> <!-- Campo de texto para o telefone comercial -->
+ </fieldset>
+ </div>
+ <div class="grupo"> <!-- Cria um grupo para as opções de gênero -->
+ <fieldset class='gen'> <!-- Agrupa as opções de gênero em uma seção -->
+ <legend>Gênero</legend> <!-- Define o título da seção de gênero -->
+ <label for="rfem">Feminino</label> <!-- Rótulo para a opção de gênero feminino -->
+ <input type="radio" name='rgen' value="F"> <!-- Campo de seleção de rádio para "Feminino" -->
+ <label for="rmas">Masculino</label> <!-- Rótulo para a opção de gênero masculino -->
+ <input type="radio" name='rgen' value="M"> <!-- Campo de seleção de rádio para "Masculino" -->
+ <label for="routro">Outro</label> <!-- Rótulo para a opção de gênero outro -->
+ <input type="radio" name='rgen' value="O"> <!-- Campo de seleção de rádio para "Outro" -->
+ </fieldset>
+ </div>
+ <div class="grupo"> <!-- Cria uma div pros botões de enviar e reset -->
+ <input type="submit" value="Enviar" class='btn'> <!-- Botão de envio do formulário -->
+ <input type="reset" value="Limpar" class='btn'> <!-- Botão para limpar os campos do formulário -->
+ </div>
+ </form>
+ </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+#customers td,
+#customers th {
+    border: 1px solid #ddd; /* Adiciona uma borda de 1px de cor cinza claro (código #ddd) ao redor de todas as células da tabela (tanto para as células de dados - td quanto para as células do cabeçalho - th) */
+    padding: 8px; /* Adiciona um espaço interno de 8px dentro das células da tabela, criando mais espaço entre o conteúdo e as bordas */
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes usada na tabela como Arial, Helvetica ou uma fonte sans-serif caso as primeiras não estejam disponíveis */
+    border-collapse: collapse; /* Faz com que as bordas das células se unam, sem espaçamento entre elas, deixando a tabela visualmente mais compacta */
+    width: 100%; /* Faz a tabela ocupar 100% da largura disponível na página */
+}
+
+#customers thead {
+    padding-top: 12px; /* Aplica um preenchimento de 12px na parte superior do cabeçalho da tabela */
+    padding-bottom: 12px; /* Aplica um preenchimento de 12px na parte inferior do cabeçalho da tabela */
+    text-align: left; /* Alinha o texto das células do cabeçalho à esquerda */
+    background-color: #4CAF50; /* Define o fundo do cabeçalho da tabela como verde */
+    color: white; /* Define a cor do texto no cabeçalho como branco */
+}
+
+#customers tbody > tr:nth-child(even) {
+    background-color: #f2f2f2; /* Aplica uma cor de fundo cinza claro nas linhas de índice par (como 2, 4, 6, etc.) no corpo da tabela */
+}
+
+#customers tbody > tr:hover {
+    background-color: #ddd; /* Muda a cor de fundo das linhas quando o mouse passa sobre elas para um cinza claro (#ddd) */
+}

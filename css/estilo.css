@@ -1,0 +1,44 @@
+*{
+    border-radius: 20px; /* Arredonda as bordas de todos os elementos com raio de 20px */
+    font-size:20px; /* Define o tamanho da fonte como 20px em todos os elementos */
+    box-sizing: border-box; /* Faz com que o tamanho total do elemento inclua bordas e preenchimento */
+}
+
+#container{
+    display: flex; /* Usa o modelo flexbox para organizar os elementos dentro do container */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    margin-top: 5%; /* Adiciona uma margem de 5% do tamanho da tela no topo */
+    border: 2px solid pink; /* Define uma borda de 2px de cor rosa ao redor do container */
+    background-image: linear-gradient(to right, white, pink); /* Cria um fundo com gradiente do branco para o rosa */
+    padding: 10px; /* Adiciona um espaço de 10px dentro do container ao redor do conteúdo */
+}
+
+.grupo{
+    width: 60vi; /* Define a largura do grupo como 60% da largura da tela */
+}
+
+input, select, fieldset {
+    width: 90%; /* Define a largura de 90% para os campos de entrada (input), seleção (select) e os campos agrupados (fieldset) */
+    padding: 5px; /* Adiciona um preenchimento de 5px dentro de cada campo */
+    border: 2px solid rgb(176,100,113); /* Adiciona uma borda de 2px com uma cor específica aos campos */
+    margin-top: 2px; /* Define uma margem de 2px acima dos campos */
+}
+
+input[type=radio]{
+    width: 5%; /* Define a largura dos botões de seleção (radio) para 5% */
+}
+
+.btn{
+    background-color: green; /* Define a cor de fundo dos botões como verde */
+    color: white; /* Define a cor do texto nos botões como branca */
+    border: 0px solid green; /* Remove qualquer borda dos botões */
+}
+
+label{
+    display: block; /* Faz os labels ocuparem toda a largura disponível e fiquem um embaixo do outro */
+}
+
+.gen label{
+    display: inline; /* Exibe os labels dentro do grupo .gen em linha, um ao lado do outro */
+}
